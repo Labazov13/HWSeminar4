@@ -7,7 +7,23 @@
 System.Console.Write("Введите число: ");
 int num = int.Parse(Console.ReadLine()!);
 
-int sum(int number)
+int sumNumbers(int number)
+{
+    int sum = 0;
+    while (num > 0)
+    {
+        sum += num % 10;
+        num /= 10;
+    }
+    System.Console.WriteLine(sum);
+    return number;
+}
+sumNumbers(num);
+
+
+
+//Оставлю на память:)
+/*int sum(int number)
 {
     int summaChisel = 0;
     if (num >1&&num<9)
@@ -37,4 +53,4 @@ int sum(int number)
     }
     return summaChisel;
 }
-sum(num);
+sum(num);*/
